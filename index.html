@@ -311,7 +311,7 @@
               </div>
 
               <div class="col-lg-6">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form action="forms/contact.php" method="post" role="form" id="contact-form" class="contact-form">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group contact-block1">
@@ -373,9 +373,9 @@
                     </div>
 
                     <div class="col-lg-12 mb-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                      <div class="contact-loading d-none">Loading</div>
+                      <div class="contact-error"></div>
+                      <div class="contact-success d-none">Your message has been sent. Thank you!</div>
                     </div>
 
                     <div class="col-lg-12">
@@ -433,7 +433,7 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
