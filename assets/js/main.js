@@ -140,7 +140,7 @@
     emailjs.init("user_T6IvDOuyKIppdf3Lx5Iug");
   });
 
-  document.getElementById("contact-form").addEventListener("submit", function (event) {
+  document.getElementById("contact-form")?.addEventListener("submit", function (event) {
     $(".contact-loading").removeClass("d-none");
     $(".contact-success").addClass("d-none");
     $(".contact-error").addClass("d-none");
